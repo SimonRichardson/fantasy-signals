@@ -11,7 +11,7 @@ Channel.prototype.send = function(v) {
     return this.x.x.set(v);
 };
 
-Channel.prototype.unwrap = function() {
+Channel.prototype.subscribe = function() {
     return this.x;
 };
 

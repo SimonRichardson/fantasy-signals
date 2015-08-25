@@ -48,7 +48,7 @@ Signal.prototype.concat = function(x) {
     return out;
 };
 
-Signal.runSignal = function() {
+Signal.prototype.runSignal = function() {
     this.x.subscribe(function(f) {
         f();
     });

@@ -1,5 +1,5 @@
 var daggy = require('daggy'),
-    Signal = require('signal'),
+    Signal = require('./signal'),
 
     Channel = daggy.tagged('x');
 

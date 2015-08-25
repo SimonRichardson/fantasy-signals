@@ -22,9 +22,9 @@ Signal.of = function(x) {
     });
 };
 
-Signal.prototype.map = function(f, s) {
-    var out = Signal.of(f(s.x.get()));
-    sig.x.subscribe(function(x) {
+Signal.prototype.map = function(f) {
+    var out = Signal.of(f(this.x.get()));
+    this.x.subscribe(function(x) {
         out.x.set(f(x));
     });
     return out;

@@ -1,19 +1,19 @@
 {
-  "name": "fantasy-channels",
-  "description": "Event-driven bidirectional channels",
+  "name": "fantasy-signals",
+  "description": "FRP library signals",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fantasyland/fantasy-channels.git"
+    "url": "git://github.com/fantasyland/fantasy-signals.git"
   },
   "keywords": [
     "fantasyland",
-    "channels",
+    "signals",
     "functors"
   ],
   "author": "Simon Richardson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fantasyland/fantasy-channels/issues"
+    "url": "https://github.com/fantasyland/fantasy-signals/issues"
   },
   "dependencies": {
     "daggy": "^0.x.x",
@@ -35,7 +35,7 @@
   "scripts": {
       "test": "grunt"
   },
-  "files": ["fantasy-channels.js", "src/*.js"],
-  "main": "fantasy-channels.js",
+  "files": ["fantasy-signals.js", "src/*.js"],
+  "main": "fantasy-signals.js",
   "version": "0.0.1"
 }

@@ -1,9 +1,10 @@
 var daggy = require('daggy'),
+    Signal = require('./signal'),
 
     Time = daggy.tagged('x');
 
-Time.millisecond = Time.of(1.0);
-Time.second = Time.of(1000.0);
+Time.millisecond = Time(1.0);
+Time.second = Time(1000.0);
 
 Time.now = function() {
     var perf = typeof performance !== 'undefined' ? performance : null,
@@ -44,7 +45,7 @@ Time.prototype.delay = function(t, s) {
 Time.prototype.since = function(t, s) {
     var out = Signal.of(false),
         first = true,
-        timer = undefined,
+        timer,
         tick = function() {
             out.x.set(false);
             timer = undefined;

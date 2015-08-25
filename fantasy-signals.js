@@ -1,6 +1,10 @@
-var Stream = require('./src/stream');
+var channel = require('./src/channel'),
+    signal  = require('./src/signal'),
+    time    = require('./src/time');
 
 if (typeof module != 'undefined')
     module.exports = {
-        Stream: Stream
+        Channel: channel,
+        Signal : signal,
+        Time   : time
     };
